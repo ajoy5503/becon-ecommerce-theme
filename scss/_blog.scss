@@ -1,0 +1,135 @@
+// Blog css area
+
+.blog-area-3 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .single-blog-card {
+        border-radius: 5px;
+        background: #F9F9F9;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .blog-image {
+        margin-bottom: 20px;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    .blog-content-text {
+        h2 {
+            margin-top: 10px;
+
+            a {
+                color: #222;
+                font-family: var(--ff-heading);
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                transition-duration: 400ms;
+
+            }
+
+            &:hover {
+                a {
+                    color: $primary;
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.blog-btn {
+    color: #706C6C;
+    font-family: var(--ff-body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    transition-duration: 500ms;
+
+    &:hover {
+        color: $primary;
+    }
+
+    i {
+        position: relative;
+        top: 3px;
+        margin-left: 3px;
+    }
+}
+
+.blog-date-user-info {
+
+
+    a {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(93, 102, 111, 0.20);
+
+        i {
+            font-size: 15px;
+            color: $primary;
+            margin-right: 3px;
+        }
+
+        color: #5D666F;
+        font-family: var(--ff-body);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.single-side-blog-card {
+    display: flex;
+    border-radius: 5px;
+    background: #F9F9F9;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+
+    .blog-side-img {
+        margin-right: 20px;
+
+        img {
+            max-width: 135px;
+            border-radius: 5px;
+        }
+    }
+
+    .blog-side-content h4 {
+        line-height: normal;
+        a {
+            color: #222;
+            font-size: 18px;
+            font-family: var(--ff-heading);
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 15px;
+            transition-duration: 500ms;
+        }
+        &:hover{
+            a{
+                color: $primary;
+            }
+        }
+    }
+}

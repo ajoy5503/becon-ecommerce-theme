@@ -1,0 +1,141 @@
+// Header 3 css
+
+.top-header.home-3 {
+    background-color: #F3F3F3;
+
+    .top-dropdown button i {
+        transition-duration: 500ms;
+    }
+
+    .top-dropdown button:hover i {
+        color: $primary;
+    }
+
+    
+}
+
+
+.cate-list-menu.home-3 a::after {
+    color: $black !important;
+}
+
+.login-btn-area-home-3.mobile--version {
+    display: none;
+}
+
+
+.header-area.home-3 {
+    background-color: $primary;
+
+    .classy-nav-container .classy-navbar .classynav ul li a {
+        color: #fff;
+    }
+
+    .classynav ul li.has-down>a::after,
+    .classynav ul li.has-down.active>a::after,
+    .classynav ul li.megamenu-item>a::after {
+        color: #fff;
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li ul li a {
+        color: $gray2;
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li ul li a:hover {
+        color: $primary;
+    }
+}
+
+.cate-dropdown-area.home-3 {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 50px;
+}
+
+.user-info-fav-area.home-3 {
+    .badges-icon-top {
+        margin-right: 25px;
+
+        &.home-3 {
+            .pro-count {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+
+}
+
+.top-serach-bar.home-3 {
+    .form-control {
+        border: 1px solid #BCE3C9;
+        height: 47px;
+        border-radius: 0;
+        color: #706C6C;
+        font-family: var(--ff-body);
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        padding-left: 25px;
+    }
+
+    .search-btn {
+        border-radius: 2px;
+        background: $primary;
+        font-size: 16px;
+        color: #fff;
+        padding: 5px 9px;
+        right: 10px;
+        transition-duration: 500ms;
+
+        &:hover {
+            background-color: $second;
+        }
+
+    }
+}
+
+.login-btn-area-home-3 {
+    .login-btn {
+        border-radius: 5px;
+        background: $second;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        color: var(--Black, #222);
+        font-family: var(--ff-body);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 29px;
+        padding: 7px 15px;
+        display: inline-block;
+
+        i {
+            margin-left: 3px;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.cart-login--area.home-3 {
+    .cart-btn-area {
+        margin-left: 0;
+
+        a {
+            font-size: 18px;
+        }
+    }
+
+    .user-info-fav-area.home-3 .badges-icon-top {
+        margin-right: 30px;
+    }
+}
+
+.user-info-fav-area.mobile-3-v {
+    display: none;
+}

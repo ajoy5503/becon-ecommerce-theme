@@ -1,0 +1,366 @@
+// :: Hero CSS
+
+
+.ani-rote{
+    animation: left-right-1 2.5s linear infinite;
+
+    @keyframes left-right-1 {
+        0% {
+
+            transform: rotate(0deg);
+        }
+
+        50% {
+
+            bottom: 5px;
+            transform: rotate(-2deg);
+        }
+
+        100% {
+
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes left-right {
+        0% {
+            left: -60px;
+        }
+
+        50% {
+            left: -70px;
+            top: 5px;
+            transform: rotate(-2deg);
+        }
+
+        100% {
+            left: -60px;
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(30deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+.hero-area {
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+
+    .hero-img-area {
+        position: absolute;
+        right: 10%;
+        bottom: 60px;
+        z-index: 1;
+        transform: rotate(-2.6deg);
+    }
+
+    .wel-shape-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+       
+    }
+
+
+
+    .wel-shape-2 {
+        position: absolute;
+        right: 0;
+        top: 5%;
+        right: 10%;
+        z-index: 1;
+    }
+
+    .hero-content-text {
+        position: relative;
+        z-index: 10;
+
+        p {
+            background-color: $primary;
+            padding: 10px 40px;
+            display: inline-block;
+            color: $white;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 9px;
+        }
+
+        h2 {
+            color: $white;
+            font-size: 62px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+}
+
+
+// Home 2 css
+
+.hero-area-home-2 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+
+    .wel-2-shape-1 {
+        position: absolute;
+        top: 0;
+        right: 7%;
+        z-index: 1;
+    }
+
+    .home-2-content-left {
+        flex: 0 0 75%;
+        height: 600px;
+        position: relative;
+        z-index: 10;
+
+        .hero-content-text-2 {
+            padding-left: 35%;
+            position: relative;
+            z-index: 10;
+
+            p {
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29px;
+                letter-spacing: 1.6px;
+            }
+
+            h2 {
+                color: $white;
+                font-size: 62px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+    .find-form-home-2 {
+        flex: 0 0 25%;
+        height: 600px;
+        background-color: $black;
+        margin-left: 30px;
+        padding: 70px;
+
+        .hero-form-select {
+            width: 100%;
+            height: 45px;
+            background: #2E2D2D;
+            color: $white;
+            font-family: var(--ff-body);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            border-radius: 0;
+            border: none;
+            line-height: 42px;
+
+        }
+
+        .nice-select .nice-select-dropdown {
+            width: 100%;
+            border-radius: 0;
+            background: #2E2D2D;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nice-select .option:hover,
+        .nice-select .option.focus,
+        .nice-select .option.selected.focus {
+            background-color: $black;
+        }
+    }
+
+    .find-form-heading {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .parts-img {
+            img {
+                width: 55px;
+            }
+        }
+
+        .parts-info-content {
+            margin-left: 15px;
+
+            p {
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29px;
+                margin-bottom: 0;
+
+            }
+
+            h4 {
+                color: $white;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 0;
+
+            }
+        }
+    }
+}
+
+// Hero area css 3
+
+.hero-area-3 {
+    height: 790px;
+    background: #F5F5F5;
+    position: relative;
+    z-index: 1;
+
+    .hero-3-shape-1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .hero-3-shape-2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        animation: wobble-vertical 5s infinite;
+
+    }
+
+    .wel-3-img-area {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .hero-content-text-3 {
+        h6 {
+            color: $primary;
+            font-family: var(--ff-heading-sub);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 6px;
+        }
+
+        h2 {
+            color: $black;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            color: #222;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+
+            span {
+                color: #706C6C;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+        }
+    }
+
+    .wel-slider {
+        position: relative;
+        z-index: 1010;
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        right: -200%;
+        z-index: 101010;
+        transform: translateY(-50%);
+
+        button.owl-prev {
+            display: block;
+            position: relative;
+            top: -15px;
+            transition-duration: 500ms;
+
+            span {
+                display: block;
+                color: #141A18;
+                font-family: var(--ff-body);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29px;
+                transform: rotate(90deg);
+                position: relative;
+                top: -10px;
+                transition-duration: 500ms;
+            }
+            &:hover{
+                color: $primary;
+                span{
+                    color: $primary;
+                }
+            }
+        }
+
+        button.owl-next {
+            display: block;
+            transition-duration: 500ms;
+
+            span {
+                display: block;
+                color: #141A18;
+                font-family: var(--ff-body);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29px;
+                transform: rotate(90deg);
+                position: relative;
+                bottom: -10px;
+                transition-duration: 500ms;
+            }
+            &:hover{
+                color: $primary;
+
+                span{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

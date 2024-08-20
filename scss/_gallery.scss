@@ -1,0 +1,103 @@
+// Gallery css area
+
+.product-gallery-area {
+   padding-bottom: 130px;
+
+   .single-pro-gallery {
+
+      .gallery-pro-img {
+         overflow: hidden;
+         img{
+            transition: all 0.3s ease-in-out;
+         }
+      }
+      .gallery-content-desc {
+         position: absolute;
+         bottom: 60px;
+         left: 60px;
+         z-index: 10;
+
+         h6 {
+            color: var(--White, #FFF);
+            font-family: var(--heading-sub);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 3.6px;
+         }
+
+         h2 {
+            color: $white;
+            font-family: "Advent Pro";
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+         }
+      }
+      &:hover{
+         .gallery-pro-img {
+            img{
+               transform: scale(1.1) rotate(3deg);
+            }
+         }
+      }
+   }
+}
+
+.single-inst-gallery-card {
+   .inst-img {
+      &::after {
+         position: absolute;
+         content: "";
+         background: linear-gradient(0deg, rgba(27, 26, 25, 0.50) 0%, rgba(27, 26, 25, 0.50) 100%);
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         z-index: 1;
+         transition: all 0.3s ease-in-out;
+         opacity: 0;
+      }
+   }
+
+   .inst-icon {
+      position: absolute;
+      top: 40%;
+      left:40%;
+      z-index: 10;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      -webkit-transform: scale(3) rotate(50deg);
+      transform: scale(3) rotate(50deg);
+      opacity: 0;
+
+      a {
+         color: $white;
+         font-size: 50px;
+      }
+   }
+
+   &:hover {
+      .inst-img {
+         &::after {
+            opacity: 1;
+         }
+      }
+
+      .inst-icon {
+         opacity: 1;
+         transform: scale(1) rotate(0deg);
+      }
+   }
+}
+
+// Gallery css 3
+
+.gallery-area-3{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}

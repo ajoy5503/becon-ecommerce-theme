@@ -1,0 +1,63 @@
+// Collection css area
+
+.senerity-collection-area {
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+
+    .single-senerity-card {
+        margin-bottom: 30px;
+        background: #ECF3F7;
+        height: 500px;
+        position: relative;
+
+        .senerity-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+        }
+
+        .senerity-img.two {
+            top: 0;
+            left: 0;
+        }
+
+        .senerity-img.three {
+            top: 0;
+            left: 50px;
+        }
+
+        .senerity-img.four {
+            top: 50px;
+            left: 50px;
+        }
+
+        .senerity-content {
+            position: absolute;
+            bottom: 50px;
+            right: 30px;
+            z-index: 9;
+
+            h4 {
+               
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                a{
+                    color:  #706C6C;
+                    font-size: 25px;
+                    font-family: var(--body-font);
+                    transition-duration: 500ms;
+                }
+                &:hover{
+                    a{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

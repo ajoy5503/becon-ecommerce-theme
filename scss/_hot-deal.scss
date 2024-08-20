@@ -1,0 +1,94 @@
+// Hot Deals css area
+
+.hot-deals-area {
+    padding-bottom: 100px;
+
+    .single-hot-deal-product {
+        border-radius: 10px;
+        background: $white;
+        box-shadow: 4px 4px 12.6px 0px rgba(226, 211, 211, 0.25);
+        padding: 70px;
+        text-align: center;
+
+        .hot-deal-img {
+            margin-bottom: 30px;
+
+            img {
+                max-height: 200px;
+                transition-duration: 900ms;
+            }
+        }
+
+        .hot-deal-content {
+            h2 {
+                margin-bottom: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                a {
+                    font-size: 25px;
+                    color: $black;
+                    font-family: var(--ff-heading);
+                    transition-duration: 500ms;
+                }
+
+                &:hover {
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .progress-bar-content {
+                .sold-per-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        margin-bottom: 0;
+                        color: #706C6C;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+
+                .progress.hot-deal {
+                    height: 5px;
+                    margin-top: 5px;
+                }
+
+                .tred-pro-price {
+                    color: #222;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 29px;
+                    margin-bottom: 0;
+                    margin-top: 12px;
+                    margin-top: 10px;
+
+                    span {
+                        color: #B7A3A3;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 29px;
+                        text-decoration: line-through;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .hot-deal-img {
+                img{
+                    transform: rotate(5deg);
+                }
+            }
+        }
+    }
+}

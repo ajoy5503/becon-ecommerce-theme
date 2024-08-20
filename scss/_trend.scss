@@ -1,0 +1,255 @@
+// Trend Product css
+
+.trending-product-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .brand-view-img-area {
+        .brand-view-img {
+           img{
+            height: 600px;
+           }
+        }
+
+        .brand-shape-img {
+            position: absolute;
+            bottom: -45px;
+            right: 0;
+            z-index: 10;
+           img{
+            height: 200px;
+           }
+        }
+
+        .brand-view-content {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 10;
+
+            h6 {
+                color: #FFF;
+                font-family: var(--ff-heading-sub);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            h3 {
+                color: #FFF;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+            }
+
+            p {
+                color: #FFF;
+                font-family: var(--ff-heading);
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            h2 {
+                color: #FFF;
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1;
+                display: block;
+                margin-bottom: 0;
+
+                span {
+                    color: #FFF;
+                    font-family: var(--ff-body);
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+        }
+    }
+}
+.trending-title {
+    h2 {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 60px;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 120%;
+            background-color: #E0E0E0;
+            bottom: -20px;
+            left: 0;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 120%;
+            background-color: #E0E0E0;
+            bottom: -25px;
+            left: 0;
+        }
+    }
+}
+
+.treand-product-card-area {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background: $white;
+    box-shadow: 4px 4px 12.6px 0px rgba(226, 211, 211, 0.25);
+
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $second;
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        left: 0;
+        transition-duration: 600ms;
+    }
+
+    .trend-img-pro {
+        margin-right: 25px;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .treand-product-text {
+        h5 {
+            a {
+                color: #706C6C;
+                font-family: var(--ff-heading);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                transition-duration: 500ms;
+            }
+
+            &:hover {
+                a {
+                    color: $primary;
+                }
+            }
+        }
+
+        .tren-pro-rating {
+            display: flex;
+            align-items: center;
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 2px;
+
+                    i {
+                        color: $second;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                margin-left: 5px;
+            }
+        }
+
+        .tred-pro-price {
+            color: #222;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 29px;
+            margin-bottom: 0;
+            margin-top: 12px;
+
+            span {
+                color: #B7A3A3;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 29px;
+                text-decoration: line-through;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.trending-slider .owl-nav {
+    position: absolute;
+    top: -12%;
+    right: -50%;
+}
+
+.trending-slider button.owl-next span,
+.trending-slider button.owl-prev span{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    color: $primary;
+    font-size: 44px;
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition-duration: 400ms;
+
+    &:hover{
+        background-color: $primary;
+        color: $white;
+    }
+}
+.trending-slider button.owl-prev span{
+    margin-right: 50px;
+}
+
+.trending-title.home-3 h2::after {
+   width: 100%;
+}
+
+.trending-title.home-3 h2::before {
+    width: 100%;
+ }

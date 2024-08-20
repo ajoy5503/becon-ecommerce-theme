@@ -1,0 +1,119 @@
+// Header css 2
+
+.middlge-header-area.home-2 {
+    .top-logo-search-bar {
+        .top-logo-area {
+            margin-right: 50px;
+        }
+    }
+}
+
+.top-header.home-2 {
+    position: relative;
+    z-index: 1010;
+}
+
+.header-area.home-2 {
+    .top-serach-bar .search-btn {
+        right: 0;
+        height: 100%;
+        padding: 0 25px;
+        transition-duration: 500ms;
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+
+
+.header-area.home-2 {
+    background-color: $black;
+
+    .classy-nav-container .classy-navbar {
+        height: 84px;
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li a {
+        color: $white !important;
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li a:hover {
+        color: $second !important;
+    }
+
+    .breakpoint-off .classynav ul li .dropdown {
+        background-color: #2E2D2D !important;
+    }
+
+    .classynav ul li .dropdown li a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .breakpoint-off .classynav ul li .dropdown {
+        top: 136% !important;
+        box-shadow: 0 1px 5px rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .cate-list-menu .dropdown li a {
+        font-size: 14px !important;
+        height: 40px !important;
+        line-height: 40px !important;
+    }
+
+    .cate-list-menu .dropdown li:hover a {
+        color: $primary !important;
+    }
+
+    .top-serach-bar .form-control {
+        position: relative;
+        border: 1px solid #BCE3C9;
+        height: 84px;
+        width: 500px;
+        border-radius: 0;
+
+    }
+
+    .user-info-fav-area.home-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .badges-icon-top {
+            display: flex;
+            align-items: center;
+
+            i {
+                color: $white;
+                position: relative;
+                z-index: 1;
+            }
+
+            .top-select-title {
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 10px;
+                font-family: var(--ff-body);
+            }
+        }
+
+        .auth-sub-title {
+            color: $white;
+            font-family: var(--ff-body);
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: block;
+        }
+
+    }
+}
+
+.top-serach-bar.mobile-v-2 {
+    display: none;
+}

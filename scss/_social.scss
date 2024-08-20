@@ -1,0 +1,17 @@
+// Social css area
+
+.follow-social-area{
+   padding: 130px 0;
+   position: relative;
+   z-index: 9;
+   &::after{
+      position: absolute;
+      content: "";
+      background-color: #F6F3EC;
+      height: 560px;
+      width: 100%;
+      top: -15%;
+      left: 0;
+      z-index: -1;
+   }
+}

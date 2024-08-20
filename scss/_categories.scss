@@ -1,0 +1,59 @@
+// Categories css area
+
+.top-selling-cate-home-2 {
+    border-radius: 5px;
+    background: #ECF3F7;
+    padding: 100px 0;
+    padding-bottom: 70px;
+
+    .cate-tab-content {
+        margin-bottom: 50px;
+        .nav-link {
+            color: $gray2;
+            font-family: var(--ff-body);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+        }
+
+        .nav-link.active,
+        .show>.nav-link {
+            color: $primary;
+            background-color: transparent;
+        }
+    }
+
+    .feater-card-1 {
+        border-radius: 10px;
+        background: $white;
+        box-shadow: 4px 4px 12px 0px rgba(226, 211, 211, 0.25);
+        padding: 0 30px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+
+        .feater-card-tab-1-content {
+            h6 {
+                color: $primary;
+                font-family: var(--ff-heading-sub);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 3.6px;
+            }
+
+            h2 {
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 15px;
+            }
+        }
+
+        .feater-card-1-img {
+            margin-top: 50px;
+        }
+    }
+}

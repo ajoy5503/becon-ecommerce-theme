@@ -1,0 +1,26 @@
+// Partner css area
+
+.partner-area {
+   padding-bottom: 130px;
+}
+
+// Partner css 2 
+
+.partner-area-home-2 {
+   padding: 100px 0;
+   padding-bottom: 0;
+   .single-partner-area-2 {
+      text-align: center;
+      h6 {
+         color: #1C263A;
+         font-family: var(--ff-body2);
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         text-transform: capitalize;
+         margin-bottom: 0;
+         margin-top: 10px;
+      }
+   }
+}

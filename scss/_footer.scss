@@ -1,0 +1,364 @@
+// Footer css area
+
+.footer-wrap {
+    position: relative;
+    z-index: 1;
+
+    .footer-shape-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .footer-gallery-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 7px;
+    }
+
+    .footer-address-area {
+        padding: 30px 0;
+
+        .footer-adde-card {
+            display: flex;
+            align-items: center;
+
+            .adde-icon {
+                background: linear-gradient(202deg, #2B2B2B 12.35%, #313131 89.28%);
+                flex: 0 0 70px;
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                text-align: center;
+
+                i {
+                    line-height: 70px;
+                    color: $primary;
+                    font-size: 26px;
+                }
+            }
+
+            .footer-adde-content {
+                margin-left: 20px;
+
+                h4 {
+                    color: $white;
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    color: #706C6C;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 0;
+                }
+
+                .add-mail {
+                    color: #706C6C;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            .footer-download-content {
+                h4 {
+                    color: $white;
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+
+                .download-btn {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .vbox-close {
+        top: 2%;
+        right: 2%;
+
+        color: #fff;
+
+    }
+
+    .footer-content-wrap {
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        .footer-logo {
+            img {
+                width: 180px;
+            }
+        }
+
+        .footer-desc {
+            color: $white;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            margin-top: 30px;
+        }
+
+        .footer-logo-desc {
+            padding-right: 30px;
+        }
+
+        .quick-links-nav {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: rgba(255, 255, 255, 0.10);
+                height: 1px;
+                width: 100%;
+                top: 20%;
+                left: 0;
+            }
+
+            h5 {
+                color: $white;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 50px;
+            }
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: $white;
+                        font-family: var(--body-font);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 40px;
+                        transition-duration: 400ms;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.copy-right-area {
+    padding: 15px 0;
+
+    .copy-right-text {
+        p {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 0;
+
+
+            a {
+                color: #FFF;
+            }
+
+            .conatct-icon {
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                background-color: $second;
+                border-radius: 50%;
+                line-height: 20px;
+                text-align: center;
+                font-size: 6px;
+                color: $white;
+                position: relative;
+                top: -3px;
+
+                i {
+                    line-height: 20px;
+
+                }
+            }
+        }
+
+        .help-text {
+            color: var(--White, #FFF);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.footer-wrap.home-3 {
+
+    .footer-logo-desc {
+        .footer-logo {
+            width: 140px;
+            margin-bottom: 15px;
+        }
+    }
+
+
+    .footer-desc {
+        color: #706C6C;
+        font-weight: 400;
+
+    }
+
+    .quick-links-nav-home-3 {
+        h5 {
+            color: $black;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(34, 34, 34, 0.20);
+            display: inline-block;
+            padding-bottom: 20px;
+
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #706C6C;
+                    font-family: var(--ff-body);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 40px;
+                    transition-duration: 400ms;
+
+                    i {
+                        margin-right: 5px;
+                        color: $primary;
+                        font-size: 18px;
+                    }
+                }
+
+                &:hover {
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .social--img {
+        height: 23px;
+        width: 23px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.footer-news-form {
+    h4 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .footer-news-letter-form-3 {
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #BCBCBC;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0;
+            position: relative;
+        }
+
+        .search-btn {
+            border: none;
+            background-color: transparent;
+            color: #C3DD46;
+            font-family: var(--ff-body);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition-duration: 500ms;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.form-news-letter-payment-area {
+    margin-top: 20px;
+}
+
+.copy-right-area-home-3 {
+    border-top: 1px solid rgba(238, 238, 238, 0.80);
+    padding: 15px 0;
+
+    .copy-right-text-home-3 {
+        p {
+            color: #706C6C;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+
+            a {
+                color: #706C6C;
+            }
+        }
+    }
+}
+
+.footer-content-wrap-home-3 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}

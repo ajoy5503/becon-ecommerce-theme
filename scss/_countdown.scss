@@ -1,0 +1,109 @@
+// Countdown css area
+
+.countdown-area {
+   padding: 30px 0;
+   overflow: hidden;
+   position: relative;
+   transform: translateY(-41%);
+   z-index: 1;
+   padding-top: 70px;
+
+   .count-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+   }
+
+   .offer-title {
+      h4 {
+         color: #FFF;
+         font-size: 35px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+         margin-bottom: 0;
+      }
+   }
+
+   .count-pattern img {
+      height: 100%;
+   }
+
+   .offer-amount {
+      h4 {
+         color: $white;
+         font-size: 62px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+         margin-bottom: 0;
+      }
+   }
+}
+
+.offer-countdown-area {
+   display: flex;
+   align-items: center;
+
+   .icon-right-area {
+      margin-right: 70px;
+
+      i {
+         color: $white;
+         font-size: 50px;
+         line-height: 1;
+      }
+   }
+
+   .count-clock {
+      width: 100%;
+   }
+
+   #clock {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   #clock div {
+      position: relative;
+      z-index: 1;
+      font-size: 50px;
+      font-family: var(--ff-heading);
+      line-height: 1;
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+
+      &::after {
+         position: absolute;
+         content: "";
+         background-color: $white;
+         height: 3px;
+         width: 3px;
+         border-radius: 50%;
+         bottom: 50%;
+         transform: translateY(-50%);
+         right: -100%;
+
+      }
+
+      &:last-child {
+         &::after {
+            display: none;
+         }
+      }
+
+      span {
+         display: block;
+         color: $white;
+         font-family: var(--ff-body);
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 24px;
+      }
+   }
+
+}

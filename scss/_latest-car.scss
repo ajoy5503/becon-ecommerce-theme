@@ -1,0 +1,28 @@
+// Latest Car Collection css
+
+.latest-car-collection-area {
+    display: flex;
+
+    .latest-car-img {
+        flex: 0 0 60%
+       
+    }
+
+    .latest-car-img img {
+        max-height: 840px;
+    }
+
+    .latest-car-info {
+        flex: 0 0 40%;
+        padding-top: 100px;
+        padding-left: 30px;
+
+        h2 {
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 30px;
+        }
+    }
+}

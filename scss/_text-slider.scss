@@ -1,0 +1,42 @@
+// Text Slider css
+
+.text-slider-section {
+   margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+
+    .text-slider-box {
+        display: flex;
+        position: relative;
+        animation: aspro-scroller-reverse 90s linear infinite;
+        will-change: transform;
+        white-space: nowrap;
+        gap: 55px;
+        left: -40%;
+
+        .slide-box {
+            h2 {
+                text-transform: capitalize;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #999292;
+                color: transparent;
+                font-size: 120px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+            }
+        }
+    }
+
+
+    @keyframes aspro-scroller-reverse {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(100%, 0);
+        }
+    }
+}
