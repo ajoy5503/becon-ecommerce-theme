@@ -1,0 +1,40 @@
+// Shop css area
+
+.shop-list-area {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .side-bard-single-card {
+        margin-bottom: 50px;
+        h3 {
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+
+                a {
+                    color: var(--Gray, #706C6C);
+                    font-family: var(--ff-body);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 29px;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -4,10 +4,16 @@
     position: relative;
     z-index: 1;
 
+    .footer-content{
+        position: relative;
+        z-index: 10;
+    }
+
     .footer-shape-1 {
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 1;
     }
 
     .footer-gallery-area {
@@ -105,6 +111,9 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
         padding-top: 90px;
         padding-bottom: 90px;
+        &.single-page{
+            padding-bottom: 70px;
+        }
 
         .footer-logo {
             img {
@@ -242,56 +251,78 @@
 
     }
 
-    .quick-links-nav-home-3 {
-        h5 {
-            color: $black;
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-bottom: 20px;
-            border-bottom: 1px solid rgba(34, 34, 34, 0.20);
-            display: inline-block;
-            padding-bottom: 20px;
+  
 
-        }
+    
+}
 
-        ul {
-            padding-left: 0;
+.social--img {
+    height: 23px;
+    width: 23px;
+    display: inline-block;
+    margin-right: 10px;
+}
 
-            li {
-                list-style: none;
-
-                a {
-                    color: #706C6C;
-                    font-family: var(--ff-body);
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 40px;
-                    transition-duration: 400ms;
-
-                    i {
-                        margin-right: 5px;
-                        color: $primary;
-                        font-size: 18px;
-                    }
-                }
-
-                &:hover {
-                    a {
-                        color: $primary;
-                    }
-                }
+.quick-links-nav-home-3 {
+    &.single-page{
+        position: relative;
+        h5{
+            position: relative;
+            z-index: 1;
+            margin-bottom:50px;
+            color: $white;
+            &::after {
+                position: absolute;
+                content: "";
+                background: rgba(255, 255, 255, 0.1);
+                height: 1px;
+                width: 100%;
+                bottom: 1px;
+                left: 0;
             }
         }
     }
-
-    .social--img {
-        height: 23px;
-        width: 23px;
+    h5 {
+        color: $black;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(34, 34, 34, 0.20);
         display: inline-block;
-        margin-right: 10px;
+        padding-bottom: 20px;
+
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #706C6C;
+                font-family: var(--ff-body);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px;
+                transition-duration: 400ms;
+
+                i {
+                    margin-right: 5px;
+                    color: $primary;
+                    font-size: 18px;
+                }
+            }
+
+            &:hover {
+                a {
+                    color: $primary;
+                }
+            }
+        }
     }
 }
 
