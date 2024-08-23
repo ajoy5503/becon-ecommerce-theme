@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/nice-select2.css">
     <link rel="stylesheet" href="./css/venobox.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/magnific-popup.css">
     <link rel="stylesheet" href="./css/icomoom.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
@@ -360,8 +361,8 @@
             <div class="row h-100 align-items-center">
                 <div class="breadcrumb-area-content">
                     <div class="breadcrumb-text-area">
-                        <p><a href="index.html">Home</a> / Product Details</p>
-                        <h2>Product Details</h2>
+                        <p><a href="index.html">Home</a> / Shop List</p>
+                        <h2>Shop List</h2>
                     </div>
                 </div>
             </div>
@@ -369,313 +370,283 @@
     </div>
     <!-- Breadcrumb area -->
 
-    <!-- Shop Details Area -->
-    <div class="shop-details-area">
+    <!-- Shop list area -->
+    <div class="shop-list-area">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="product-single-img text-center">
-                        <img src="img/bg-img/shop/61.png" alt="">
+            <div class="row">
+                <!-- Side bar -->
+                <div class="col-lg-3">
+                    <div class="side-bar-left-area">
+                        <!-- Card -->
+                        <div class="side-bard-single-card">
+                            <h3>Categories</h3>
+                            <ul>
+                                <li><a href="#">Fashion ware (10)</a></li>
+                                <li><a href="#">Kitchenware (5)</a></li>
+                                <li><a href="#">Electronics (8)</a></li>
+                                <li><a href="#">Accessories (4)</a></li>
+                                <li><a href="#">Shoe (5)</a></li>
+                                <li><a href="#">Toys (2)</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="side-bard-single-card">
+                            <h3>Price</h3>
+                            <div class="widget-desc">
+                                <div class="slider-range">
+                                    <div data-min="0" data-max="1350" data-unit="$"
+                                        class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                        data-value-min="0" data-value-max="500" data-label-result="Price:">
+                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all"
+                                            tabindex="0"></span>
+                                        <span class="ui-slider-handle ui-state-default ui-corner-all"
+                                            tabindex="0"></span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="range-price">
+                                            <p>Price: <span>0 - 500</span></p>
+                                        </div>
+                                        <a class="filter-btn" href="#">Filter</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Card -->
+                        <div class="side-bard-single-card">
+                            <h3>Brand</h3>
+                            <ul>
+                                <li> <input class="custom-checkbox" id="category1" type="checkbox" name="text"><label
+                                        class="bran-text" for="category1">Quickiin (15)</label></li>
+
+                                <li> <input class="custom-checkbox" id="category2" type="checkbox" name="text"><label
+                                        class="bran-text" for="category2">Hastech (5)</label></li>
+
+                                <li> <input class="custom-checkbox" id="category3" type="checkbox" name="text"><label
+                                        class="bran-text" for="category3">Electronics (8)</label></li>
+
+                                <li> <input class="custom-checkbox" id="category4" type="checkbox" name="text"><label
+                                        class="bran-text" for="category4">Graphic corner (10)</label></li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="side-bard-single-card">
+                            <h3>Color</h3>
+                            <ul>
+                                <li> <input class="custom-checkbox" id="category1" type="checkbox" name="text"><label
+                                        class="bran-text" for="category10">Black (15)</label></li>
+
+                                <li> <input class="custom-checkbox" id="category2" type="checkbox" name="text"><label
+                                        class="bran-text" for="category20">Green (5)</label></li>
+
+                                <li> <input class="custom-checkbox" id="category3" type="checkbox" name="text"><label
+                                        class="bran-text" for="category30">Blue (8)</label></li>
+
+                                <li> <input class="custom-checkbox" id="category4" type="checkbox" name="text"><label
+                                        class="bran-text" for="category40">Red (2)</label></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-banner-area relative mb-50">
+                            <div class="sidebar-product-img relative">
+                                <a href="#"><img class="banner-shape" src="img/bg-img/shape/shape-11.png" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9">
+                    <div class="filter-header-area d-flex align-items-center justify-content-between">
+                        <div class="filter-show d-flex align-items-center">
+                            <div>
+                                <a href="#"><i class="icon-mingcute_grid-line"></i></a>
+                                <a href="#"><i class="icon-cil_list"></i></a>
+                            </div>
+                            <p class="mb-0">Showing 1–12 of 14 results</p>
+                        </div>
+                        <div class="select-dropdown-filter">
+                            <div class="top-dropdown">
+                                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="d-sm-inline-block lan-btn"> Default sorting <i
+                                            class="icon-down-arrow-1"></i></span>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Moderna's</a></li>
+                                    <li><a class="dropdown-item" href="#">Multivitamin</a></li>
+                                    <li><a class="dropdown-item" href="#">Lorastad</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-tri-img">
-                                <a href="#"><img src="img/bg-img/shop/62.png" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-tri-img">
-                                <a href="#"><img src="img/bg-img/shop/63.png" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-tri-img">
-                                <a href="#"><img src="img/bg-img/shop/57.png" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-tri-img">
-                                <a href="#"><img src="img/bg-img/shop/58.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="product-info-details-area">
-                        <h4>Handmade Golden Necklace Full Family Package</h4>
-                        <div class="product-rating">
-                            <ul class="rating-list">
-                                <li><i class="icon-star1"></i></li>
-                                <li><i class="icon-star1"></i></li>
-                                <li><i class="icon-star1"></i></li>
-                                <li><i class="icon-star1"></i></li>
-                                <li><i class="icon-star1"></i></li>
-                            </ul>
-                            <p>4.5 <span>(0 Reviews)</span></p>
-                        </div>
-                        <h4 class="price-title">$255.25 <span>$20</span></h4>
-
-                        <p class="product-desc">
-                            Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-
-                        <div class="qty-pro-area">
-                            <p>Quantity : </p>
-                            <form class="cart-form">
-                                <div class="order-plus-minus d-flex align-items-center">
-                                    <div class="quantity-button-handler">-</div>
-                                    <input class="form-control cart-quantity-input" type="text" name="quantity"
-                                        value="3">
-                                    <div class="quantity-button-handler">+</div>
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="treand-product-card-area">
+                                <div class="trend-img-pro">
+                                    <img src="img/bg-img/shop/62.png" alt="">
                                 </div>
-                                <div class="select-icon-area">
-                                    <a href="#"><i class="icon-heart-1"></i></a>
-                                    <a href="#"><i class="icon-icon_ribbon_alt"></i></a>
-                                </div>
-                            </form>
-                        </div>
-                        <a class="post-btn mb-4" type="submit"><i class="icon-Nest-1"></i> Add To Cart</a>
-                        <!-- Size Option -->
-                        <div class="widget d-flex align-items-center size mb-3">
-                            <h6 class="widget-title mb-0">Size :</h6>
-                            <div class="widget-desc">
-                                <ul>
-                                    <li><a href="#">XS</a></li>
-                                    <li><a href="#">S</a></li>
-                                    <li><a href="#">M</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Color Option -->
-                        <div class="product-option d-flex align-items-center">
-                            <h5 class="widget-title mb-0">Color:</h5>
-                            <div class="color-box">
-                                <ul class="color-variant">
-                                    <li class="bg--dark"></li>
-                                    <li class="bg--primary"></li>
-                                    <li class="bg--navy"></li>
-                                    <li class="bg--second"></li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="shop-detials-tab">
-                        <ul class="nav nav-pills product-tab-title" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                                    aria-selected="true"> Description</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab"
-                                    aria-controls="pills-profile" aria-selected="false">
-                                    Additional information </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact" type="button" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">
-                                    Reviews (1)
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                aria-labelledby="pills-home-tab" tabindex="0">
-                                <div class="product-details-tab-content">
-                                    <p>Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliquat enim ad minim
-                                        veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        volueryptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui
-                                        offici area follow deserunt mollit anim id est laborum. Sed ut
-                                        perspiciatis unde omnis iste natus error sit voluptate.</p>
-
-                                    <p>Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliquat enim ad minim
-                                        veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        volueryptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui
-                                        offici area follow deserunt mollit anim id est laborum. Sed ut
-                                        perspiciatis unde omnis iste natus error sit voluptate.</p>
-
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab" tabindex="0">
-                                <div class="product-details-tab-content">
-                                    <p>Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliquat enim ad minim
-                                        veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        volueryptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui
-                                        offici area follow deserunt mollit anim id est laborum. Sed ut
-                                        perspiciatis unde omnis iste natus error sit voluptate.</p>
-
-                                    <p>Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliquat enim ad minim
-                                        veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        volueryptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui
-                                        offici area follow deserunt mollit anim id est laborum. Sed ut
-                                        perspiciatis unde omnis iste natus error sit voluptate.</p>
-
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                aria-labelledby="pills-contact-tab" tabindex="0">
-                                <div class="product-details-tab-content">
-                                    <p>Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliquat enim ad minim
-                                        veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        volueryptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui
-                                        offici area follow deserunt mollit anim id est laborum. Sed ut
-                                        perspiciatis unde omnis iste natus error sit voluptate.</p>
-
-                                    <p>Dorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliquat enim ad minim
-                                        veniam, quriesstrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        volueryptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui
-                                        offici area follow deserunt mollit anim id est laborum. Sed ut
-                                        perspiciatis unde omnis iste natus error sit voluptate.</p>
-
+                                <div class="treand-product-text">
+                                    <h5><a href="product-details.html">Moderna's Vaccine</a></h5>
+                                    <div class="tren-pro-rating">
+                                        <ul>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                        </ul>
+                                        <p>(15)</p>
+                                    </div>
+                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="treand-product-card-area">
+                                <div class="trend-img-pro">
+                                    <img src="img/bg-img/shop/62.png" alt="">
+                                </div>
+                                <div class="treand-product-text">
+                                    <h5><a href="product-details.html">Moderna's Vaccine</a></h5>
+                                    <div class="tren-pro-rating">
+                                        <ul>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                        </ul>
+                                        <p>(15)</p>
+                                    </div>
+                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="treand-product-card-area">
+                                <div class="trend-img-pro">
+                                    <img src="img/bg-img/shop/62.png" alt="">
+                                </div>
+                                <div class="treand-product-text">
+                                    <h5><a href="product-details.html">Moderna's Vaccine</a></h5>
+                                    <div class="tren-pro-rating">
+                                        <ul>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                        </ul>
+                                        <p>(15)</p>
+                                    </div>
+                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="treand-product-card-area">
+                                <div class="trend-img-pro">
+                                    <img src="img/bg-img/shop/62.png" alt="">
+                                </div>
+                                <div class="treand-product-text">
+                                    <h5><a href="product-details.html">Moderna's Vaccine</a></h5>
+                                    <div class="tren-pro-rating">
+                                        <ul>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                        </ul>
+                                        <p>(15)</p>
+                                    </div>
+                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="treand-product-card-area">
+                                <div class="trend-img-pro">
+                                    <img src="img/bg-img/shop/62.png" alt="">
+                                </div>
+                                <div class="treand-product-text">
+                                    <h5><a href="product-details.html">Moderna's Vaccine</a></h5>
+                                    <div class="tren-pro-rating">
+                                        <ul>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                        </ul>
+                                        <p>(15)</p>
+                                    </div>
+                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="treand-product-card-area">
+                                <div class="trend-img-pro">
+                                    <img src="img/bg-img/shop/62.png" alt="">
+                                </div>
+                                <div class="treand-product-text">
+                                    <h5><a href="product-details.html">Moderna's Vaccine</a></h5>
+                                    <div class="tren-pro-rating">
+                                        <ul>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                            <li><i class="icon-star1"></i></li>
+                                        </ul>
+                                        <p>(15)</p>
+                                    </div>
+                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="pagination-area mt-3">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item"><a class="page-link last-pagi" href="#"><i
+                                                    class="icon-arrow_carrot-2right"></i></a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link last-pagi" href="#"><i
+                                                    class="icon-arrow_carrot-2right1"></i></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Shop Details Area -->
-
-        <!-- Hot Deals Area -->
-        <div class="hot-deals-area">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7">
-                        <div class="heading-title text-center wow fadeInUp" data-wow-delay="500ms">
-                            <h2>Related Products</h2>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="hot-deal-slider owl-carousel">
-                        <!-- Single deal Card -->
-                        <div class="single-hot-deal-product">
-                            <div class="hot-deal-img">
-                                <img src="img/bg-img/shop/53.png" alt="">
-                            </div>
-                            <div class="hot-deal-content">
-                                <h2><a href="product-details.html">Blowoff Valve Kit</a></h2>
-                                <div class="progress-bar-content">
-                                    <div class="sold-per-text">
-                                        <p>Sold : 89 / 118</p>
-                                        <p>27.91%</p>
-                                    </div>
-                                    <div class="progress hot-deal" role="progressbar" aria-label="Success example"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar bg--second" style="width: 75%"></div>
-                                    </div>
-                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Single deal Card -->
-                        <div class="single-hot-deal-product">
-                            <div class="hot-deal-img">
-                                <img src="img/bg-img/shop/66.png" alt="">
-                            </div>
-                            <div class="hot-deal-content">
-                                <h2><a href="product-details.html">Blowoff Valve Kit</a></h2>
-                                <div class="progress-bar-content">
-                                    <div class="sold-per-text">
-                                        <p>Sold : 89 / 118</p>
-                                        <p>27.91%</p>
-                                    </div>
-                                    <div class="progress hot-deal" role="progressbar" aria-label="Success example"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar bg--second" style="width: 50%"></div>
-                                    </div>
-                                    <p class="tred-pro-price">$12.00 <span>$18.00</span></p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Single deal Card -->
-                        <div class="single-hot-deal-product">
-                            <div class="hot-deal-img">
-                                <img src="img/bg-img/shop/53.png" alt="">
-                            </div>
-                            <div class="hot-deal-content">
-                                <h2><a href="product-details.html">Blowoff Valve Kit</a></h2>
-                                <div class="progress-bar-content">
-                                    <div class="sold-per-text">
-                                        <p>Sold : 89 / 118</p>
-                                        <p>27.91%</p>
-                                    </div>
-                                    <div class="progress hot-deal" role="progressbar" aria-label="Success example"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar bg--second" style="width: 75%"></div>
-                                    </div>
-                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Single deal Card -->
-                        <div class="single-hot-deal-product">
-                            <div class="hot-deal-img">
-                                <img src="img/bg-img/shop/57.png" alt="">
-                            </div>
-                            <div class="hot-deal-content">
-                                <h2><a href="product-details.html">Blowoff Valve Kit</a></h2>
-                                <div class="progress-bar-content">
-                                    <div class="sold-per-text">
-                                        <p>Sold : 89 / 118</p>
-                                        <p>27.91%</p>
-                                    </div>
-                                    <div class="progress hot-deal" role="progressbar" aria-label="Success example"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar bg--second" style="width: 75%"></div>
-                                    </div>
-                                    <p class="tred-pro-price">$10.00 <span>$18.00</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hot Deals Area -->
+    <!-- Shop list area -->
 
     <!-- Footer Area -->
     <footer class="footer-wrap bg--dark">
@@ -865,6 +836,7 @@
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="./js/magnific-popup.min.js"></script>
     <script src="./js/venobox.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/countdown.js"></script>
     <script src="./js/wow.js"></script>
     <script src="./js/custom.js"></script>

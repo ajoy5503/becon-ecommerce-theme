@@ -113,7 +113,7 @@
     display: flex;
     align-items: center;
     border-radius: 10px;
-    padding: 30px;
+    padding: 30px 20px;
     margin-bottom: 30px;
     background: $white;
     box-shadow: 4px 4px 12.6px 0px rgba(226, 211, 211, 0.25);
@@ -132,10 +132,10 @@
     }
 
     .trend-img-pro {
-        margin-right: 25px;
+        margin-right: 20px;
 
         img {
-            width: 100px;
+            width: 90px;
         }
     }
 
@@ -144,7 +144,7 @@
             a {
                 color: #706C6C;
                 font-family: var(--ff-heading);
-                font-size: 20px;
+                font-size: 19px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;

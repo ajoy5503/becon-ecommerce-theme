@@ -290,6 +290,29 @@
 		})
 	}
 
+	  // :: Price Range Code
+
+	  $('.slider-range-price').each(function () {
+        var min = $(this).data('min'),
+            max = $(this).data('max'),
+            unit = $(this).data('unit'),
+            value_min = $(this).data('value-min'),
+            value_max = $(this).data('value-max'),
+            label_result = $(this).data('label-result'),
+            t = $(this);
+        $(this).slider({
+            range: true,
+            min: min,
+            max: max,
+            values: [value_min, value_max],
+            slide: function (event, ui) {
+                var result = label_result + " " + unit + ui.values[0] + ' - ' + unit + ui.values[1];
+                t.closest('.slider-range').find('.range-price').html(result);
+            }
+        });
+    });
+
+
 
 })(jQuery);
 

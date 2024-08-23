@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?en4te8');
-  src:  url('../fonts/icomoon.eot?en4te8#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?en4te8') format('truetype'),
-    url('../fonts/icomoon.woff?en4te8') format('woff'),
-    url('../fonts/icomoon.svg?en4te8#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?fefzil');
+  src:  url('../fonts/icomoon.eot?fefzil#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fefzil') format('truetype'),
+    url('../fonts/icomoon.woff?fefzil') format('woff'),
+    url('../fonts/icomoon.svg?fefzil#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -39,6 +39,9 @@
 }
 .icon-shipped-1:before {
   content: "\e95e";
+}
+.icon-icon_tags:before {
+  content: "\e96d";
 }
 .icon-l1eft-arrow:before {
   content: "\e969";
@@ -78,6 +81,12 @@
 }
 .icon-paper-plane-1:before {
   content: "\e941";
+}
+.icon-chat-bubble1:before {
+  content: "\e96e";
+}
+.icon-white-origami-plane:before {
+  content: "\e96f";
 }
 .icon-right-arrow1:before {
   content: "\e94d";

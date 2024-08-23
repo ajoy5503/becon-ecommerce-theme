@@ -1,0 +1,54 @@
+// Auth css area
+
+.auth-form-area {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .auth-title {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .auth-form-area {
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        background: $white;
+        box-shadow: 0px 4px 10px 0px rgba(226, 208, 208, 0.25);
+        padding: 90px 60px;
+        margin-bottom: 50px;
+
+
+
+        .lable-text {
+            color: #222;
+            font-family: var(--ff-heading);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            background: #F2F2F2;
+            height: 65px;
+            border: none;
+        }
+
+        .forgot-pass {
+            margin-top: 20px;
+
+            a {
+                color: var(--3rd, #51ACF6);
+                font-family: var(--ff-body);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+    }
+}
